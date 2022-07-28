@@ -8,22 +8,29 @@
 //  Date: 07282022
 ////////////////////////////////////////////////////////////////////////////////////////////////////
 
+// define the packages we need
+import java.util.Scanner;
+
 // class declaration
 public class ComputeArea {
 
     // main function
     public static void main(String[] args) {
 
-        // define our vars0
-        double radius = 0.00;
+        // define our vars
         double area = 0.00;
 
+        // create the Scanner object
+        Scanner input = new Scanner(System.in);
+        
+        // prompt the user for the value for radius
+        System.out.print("> Enter the value for radius: ");
+        double radius = input.nextDouble();
         // perform the computations
-        radius = 20.00;
         area = (radius * radius) * 3.14159;
 
         // display the result
-        System.out.println("The area for the circle of radius " + radius + " is " + area);
+        System.out.println("> The area for the circle of radius " + radius + " is " + area);
     }
 }
 ////////////////////////////////////////////////////////////////////////////////////////////////////
