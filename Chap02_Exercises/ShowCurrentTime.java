@@ -14,7 +14,7 @@
 public class ShowCurrentTime {
     public static void main(String[] args) {
 
-       String ampm;
+       String timeOfDay;
 
         // get the total number of milliseconds since midnight
        long totalMilliseconds = System.currentTimeMillis();
@@ -37,10 +37,10 @@ public class ShowCurrentTime {
        // get the current hour
        long currentHour = totalHours % 24;
 
-       if (currentHour > 12)
-           ampm = "PM";
+       if (currentHour >= 12)
+           timeOfDay = "PM";
        else
-           ampm = "AM";
+           timeOfDay = "AM";
 
        long currentHourAMPM = currentHour % 12;
 
@@ -49,7 +49,7 @@ public class ShowCurrentTime {
                + currentHourAMPM + ":"
                + currentMinute + ":"
                + currentSecond
-               + " " + ampm
+               + " " + timeOfDay
                + " GMT");
     }
 }
