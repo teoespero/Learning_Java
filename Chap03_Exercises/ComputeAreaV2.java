@@ -31,8 +31,9 @@ public class ComputeAreaV2 {
         System.out.print("> Enter the value for radius: ");
         double radius = input.nextDouble();
 
-        if (radius < 0)
+        if (radius < 0){
             System.out.println("The radius can't be less than 0.");
+        }
         else {
             // perform the computations
             area = (radius * radius) * 3.14159;
