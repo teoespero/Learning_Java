@@ -1,10 +1,13 @@
 ////////////////////////////////////////////////////////////////////////////////////////////////////
-//  ComputeArea.java
+//  ComputeAreaV2.java
 //  Author: Teo Espero
 //          BS Cloud and System Administration
 //          BS Software Development
 //          Western Governors University
-//  Description: This program in Java was written to demo the computation of a Circle's area.
+//  Description:
+//          This program in Java was written to demo the computation of a Circle's area.
+//          This version validates for the radius and does not proceed if the value is less
+//          than zero.
 //  Date: 07282022
 ////////////////////////////////////////////////////////////////////////////////////////////////////
 
