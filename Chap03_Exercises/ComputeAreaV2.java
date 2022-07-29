@@ -12,7 +12,6 @@
 ////////////////////////////////////////////////////////////////////////////////////////////////////
 
 // define the packages we need
-import javax.swing.plaf.TableHeaderUI;
 import java.util.Scanner;
 
 // class declaration
@@ -31,6 +30,8 @@ public class ComputeAreaV2 {
         System.out.print("> Enter the value for radius: ");
         double radius = input.nextDouble();
 
+        // this part checks the value of radius and
+        // proceeds with the computation if radius <= 0
         if (radius < 0){
             System.out.println("The radius can't be less than 0.");
         }
