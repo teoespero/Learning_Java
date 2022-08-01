@@ -188,6 +188,7 @@ public class ComputeTax {
             }
         }
 
+        // format our output so it looks human-readable
         DecimalFormat ft = new DecimalFormat( "$ ###,###.##"  ) ;
 
         System.out.println("========================================");
