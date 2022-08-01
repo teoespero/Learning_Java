@@ -36,6 +36,9 @@ public class ComputeTax {
         double incomeTax = 0.00;
 
         // get user's filing status
+        System.out.println("========================================");
+        System.out.println("FEDERAL TAX ESTIMATOR");
+        System.out.println("========================================");
         System.out.println("Choose filing status below:");
         System.out.println("\t0-Single");
         System.out.println("\t1-Married/Joint");
@@ -44,6 +47,7 @@ public class ComputeTax {
         System.out.print("> ");
         Scanner input = new Scanner(System.in);
         int filingStatus = input.nextInt();
+        System.out.println("========================================");
 
         // get user's income
         System.out.print("Enter annual taxable income: ");
@@ -193,7 +197,7 @@ public class ComputeTax {
 
         System.out.println("========================================");
         System.out.println("Filing Status: " + taxType);
-        System.out.println("Income tax: " + ft.format(incomeTax));
+        System.out.println("Estimated Income tax: " + ft.format(incomeTax));
         System.out.println("========================================");
     }
 }
