@@ -153,7 +153,7 @@ public class ComputeTax {
             }
 
         //////////////////////////////////////////////////////////
-        // MARRIED FILING SEPARATELY
+        // HEAD OF HOUSEHOLD
         } else if (filingStatus == 3) {
             taxType = "Head of Household";
             if (income <= 11950){
