@@ -21,10 +21,11 @@
 //          28        82251-171550       137051-208850      68526-104425            117451-190200
 //          33        171551-372950      208851-372950      104426-186475           190201-372950
 //          35        372951+            972951+            186476+                 372951+
-//  Date: 07292022
+//  Date: 08012022
 ////////////////////////////////////////////////////////////////////////////////////////////////////
 
 // define the packages we need
+import java.text.DecimalFormat ;
 import java.util.Scanner;
 
 public class ComputeTax {
@@ -48,6 +49,8 @@ public class ComputeTax {
         System.out.print("Enter annual taxable income: ");
         double income = input.nextDouble();
 
+        //////////////////////////////////////////////////////////
+        //  TAX BRACKET MATRIX
         // determine filing status type and income tax
 
         //////////////////////////////////////////////////////////
@@ -56,7 +59,6 @@ public class ComputeTax {
             System.out.println("Invalid filing status choice...");
         } else if (filingStatus == 0) {
             taxType = "Single";
-            income = 12550;
             if (income <= 8350){
                 incomeTax = income * 0.10;
             } else if (income <= 33950) {
@@ -186,9 +188,12 @@ public class ComputeTax {
             }
         }
 
+        DecimalFormat ft = new DecimalFormat( "$ ###,###.##"  ) ;
+
         System.out.println("========================================");
         System.out.println("Filing Status: " + taxType);
-        System.out.println("Income tax: " + incomeTax);
+        System.out.println("Income tax: " + ft.format(incomeTax));
         System.out.println("========================================");
     }
 }
+////////////////////////////////////////////////////////////////////////////////////////////////////
