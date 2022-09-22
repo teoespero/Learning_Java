@@ -46,11 +46,13 @@ class BankAcctTest {
         System.out.println("1 - Another transaction");
         System.out.println("2 - Exit");
 
+        /* what do you want to do */
+        System.out.print(": ");
         Scanner runMore = new Scanner(System.in);
         int again = runMore.nextInt();
 
-        if (again == 1) return true;
-        else return false;
+        /* validate choice */
+        return again == 1;
     }
 
     /**
@@ -151,8 +153,7 @@ class BankAcctTest {
 
         /* define an input object to accept transaction type */
         Scanner myChoice = new Scanner(System.in);
-        int userChoice = myChoice.nextInt();
-        return userChoice;
+        return myChoice.nextInt();
     }
 
     /**
