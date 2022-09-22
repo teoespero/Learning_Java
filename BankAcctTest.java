@@ -13,11 +13,14 @@ import java.util.Scanner;
 
 //  class to test out the bank acct class
 class BankAcctTest {
+    public static String liner = "--------------------------------------------";
+    public static String bankName = "ESPERO BANK";
 
     /**
      * main program
      */
     public static void main(String[] args){
+
 
         /* class declaration */
         BankAcct bdoAcct = new BankAcct(9222022,"Teo Espero",
@@ -45,7 +48,7 @@ class BankAcctTest {
      * ask if there are other transactions
      */
     private static boolean runAgain() {
-        System.out.println("--------------------------------------------");
+        System.out.println(liner);
         System.out.println("1 - Another transaction");
         System.out.println("2 - Exit");
 
@@ -93,7 +96,7 @@ class BankAcctTest {
     private static void makeAWithdrawal(BankAcct bankObj) {
 
         /* show the user what mode we are in */
-        System.out.println("--------------------------------------------");
+        System.out.println(liner);
         System.out.println("WITHDRAWAL");
         System.out.println();
 
@@ -112,7 +115,7 @@ class BankAcctTest {
         /* show the current balance after the withdrawal */
         System.out.print("New ");
         showBalance(bankObj);
-        System.out.println("--------------------------------------------");
+        System.out.println(liner);
     }
 
     /**
@@ -121,7 +124,7 @@ class BankAcctTest {
     private static void makeADeposit(BankAcct bankObj) {
 
         /* show the user what mode we are in */
-        System.out.println("--------------------------------------------");
+        System.out.println(liner);
         System.out.println("DEPOSIT");
         System.out.println();
 
@@ -140,7 +143,7 @@ class BankAcctTest {
         /* show the current balance after the deposit */
         System.out.print("New  ");
         showBalance(bankObj);
-        System.out.println("--------------------------------------------");
+        System.out.println(liner);
     }
 
     /**
@@ -148,7 +151,7 @@ class BankAcctTest {
      */
     private static int showMenu() {
         System.out.println("Choose a transaction");
-        System.out.println("--------------------------------------------");
+        System.out.println(liner);
         System.out.println("1 -> Withdrawal");
         System.out.println("2 -> Deposit");
         System.out.println("3 -> Balance Inquiry");
@@ -164,7 +167,7 @@ class BankAcctTest {
      */
     private static void showFooter() {
         System.out.println("N O T H I G  F O L L O W S");
-        System.out.println("--------------------------------------------");
+        System.out.println(liner);
         System.out.println();
     }
 
@@ -182,8 +185,8 @@ class BankAcctTest {
      * show the bank's name
      */
     private static void showBankHeader() {
-        System.out.println("ESPERO BANK");
-        System.out.println("--------------------------------------------");
+        System.out.println(bankName);
+        System.out.println(liner);
     }
 
     /**
