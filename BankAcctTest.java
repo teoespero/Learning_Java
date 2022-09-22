@@ -24,6 +24,7 @@ class BankAcctTest {
                 472000.00, "teodulfo.espero@gmail.com",1234567);
         boolean again = true;
 
+        /* main transaction loop */
         while (again){
             showBankHeader();
             showAcctInfo(bdoAcct);
@@ -33,6 +34,8 @@ class BankAcctTest {
             processTransaction(bdoAcct);
             again = runAgain();
         }
+
+        /* exit */
         System.out.println("GOOD BYE!!!");
 
 
