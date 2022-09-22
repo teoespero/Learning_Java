@@ -95,6 +95,8 @@ public class BankAcct {
     public void withdrawAction(double amountToWithdraw){
         if (!insufficientFunds(amountToWithdraw))
             balance = balance - amountToWithdraw;
+        else
+            System.out.println("Not enough funds available");
     }
 
     public void depositAction(double amountToDeposit){

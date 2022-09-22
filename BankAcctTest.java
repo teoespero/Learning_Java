@@ -107,7 +107,7 @@ class BankAcctTest {
         bankObj.withdrawAction(wthAmount);
 
         /* show the current balance after the withdrawal */
-        System.out.println("New ");
+        System.out.print("New ");
         showBalance(bankObj);
         System.out.println("--------------------------------------------");
     }
